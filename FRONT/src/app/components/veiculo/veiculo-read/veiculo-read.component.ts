@@ -11,6 +11,9 @@ export class VeiculoReadComponent implements OnInit {
 
   veiculos!: Veiculo[]
 
+  displayedColumns = ['marca', 'modelo', 'placa', 'cor']
+
+
   constructor(private veiculoService : VeiculoService) { }
 
   ngOnInit(): void {

@@ -28,6 +28,10 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input';
 import { VeiculoReadComponent } from './components/veiculo/veiculo-read/veiculo-read.component'
 
+import { MatTableModule } from '@angular/material/table'
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +57,10 @@ import { VeiculoReadComponent } from './components/veiculo/veiculo-read/veiculo-
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
 
 
   ],
