@@ -1,7 +1,26 @@
-<button mat-raised-button (click)="createVeiculo()" color="primary">
-    Salvar
-</button>
+<mat-card>
+    <mat-card-title>Novo veículo</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Marca" [(ngModel)]="veiculo.marca" name="marca">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Modelo" [(ngModel)]="veiculo.modelo" name="modelo">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Placa"  [(ngModel)]="veiculo.placa" name="placa">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cor"  [(ngModel)]="veiculo.cor" name="cor">
+        </mat-form-field>
+    </form>
 
-<button mat-raised-button (click)="cancel()">
-    Cancelar
-</button>
+
+    <button mat-raised-button (click)="createVeiculo()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
